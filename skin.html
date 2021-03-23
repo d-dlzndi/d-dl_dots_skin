@@ -2,866 +2,863 @@
 <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="ko">
 
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="author" content="[##_blogger_##]">
-  <meta name="description" content="[##_title_##]">
-  <meta name="keywords" content="[##_meta_http_equiv_keywords_##]">
-  <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="[##_blogger_##]">
+    <meta name="description" content="[##_title_##]">
+    <meta name="keywords" content="[##_meta_http_equiv_keywords_##]">
+    <meta name="viewport" content="width=device-width">
 
-  <title>[##_page_title_##] - [##_title_##]</title>
+    <title>[##_page_title_##] - [##_title_##]</title>
 
-  <script>
-    if ('[##_page_title_##]' == '[##_title_##]') {
-      document.title = '[##_title_##]';
-    }
-  </script>
+    <script>
+        if ('[##_page_title_##]' == '[##_title_##]') {
+            document.title = '[##_title_##]';
+        }
 
-  <style>
-    :root {
-      --base: [##_var_base-color_##];
-      --color: [##_var_color-color_##];
-      --point: [##_var_point-color_##];
+    </script>
 
-      --content-width: [##_var_content-width_##];
-    }
-  </style>
-  <link rel="stylesheet" type="text/css" href="./style.css">
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="./images/script.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <style>
+        :root {
+            --base: [##_var_base-color_##];
+            --color: [##_var_color-color_##];
+            --point: [##_var_point-color_##];
+
+            --content-width: [##_var_content-width_##];
+        }
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./images/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
 
 </head>
 
-<body onload="load();">
-  <s_t3>
-    <nav class="main-sidebar no-drag">
-      <div class="main-top">
-        <div class="main-profile">
-          <div class="main-profile-img">
-            <div class="background-cover" style="height: 100px; background-color: var(--base); background-image: url('[##_image_##]')"></div>
-          </div>
-          <div class="main-profile-bio">
-            <h3 class="main-profile-blogtitle">
-              <a href="[##_blog_link_##]">
-                <s_not_var_blog-title-is-name>
-                  [##_title_##]
-                </s_not_var_blog-title-is-name>
-                <s_if_var_blog-title-is-name>
-                  [##_blogger_##]
-                </s_if_var_blog-title-is-name>
-              </a>
-            </h3>
-            <p class="main-profile-biosub">
-              [##_desc_##]
-            </p>
-          </div>
-        </div>
-
-        <s_if_var_blog-side-menu>
-          <s_if_var_blog-side-bar>
-            <div class="vertical-line"></div>
-          </s_if_var_blog-side-bar>
-
-          <div class="main-profile-category">
-            <div class="category-list">
-              [##_blog_menu_##]
-            </div>
-          </div>
-        </s_if_var_blog-side-menu>
-
-        <s_if_var_blog-side-bar>
-          <div class="vertical-line"></div>
-        </s_if_var_blog-side-bar>
-
-        <div class="main-profile-category">
-          <div class="category-list">
-            [##_category_list_##]
-          </div>
-        </div>
-      </div>
-
-      <div class="main-profile-quickmenu">
-        <s_search>
-          <form class="main-search-form">
-            <div class="flex">
-              <input type="text" name="[##_search_name_##]" maxlength="10" value="[##_search_text_##]" required />
-              <button type="submit" onclick="[##_search_onclick_submit_##]"><i class="fas fa-search"></i></button>
-            </div>
-          </form>
-        </s_search>
-        <ul>
-          <li>
-            <a href="[##_blog_link_##]manage" d-dl-tooltip="환경설정">
-              <i class="fas fa-wrench"></i>
-            </a>
-          </li>
-          <li>
-            <a href="[##_blog_link_##]manage/post" d-dl-tooltip="글쓰기">
-              <i class="fas fa-feather-alt"></i>
-            </a>
-          </li>
-          <li>
-            <a href="[##_guestbook_link_##]" d-dl-tooltip="방명록">
-              <i class="fas fa-book"></i>
-            </a>
-          </li>
-          <li>
-            <a href="[##_taglog_link_##]" d-dl-tooltip="태그 클라우드">
-              <i class="fas fa-hashtag"></i>
-            </a>
-          </li>
-          <li id="github-icon">
-            <a href="https://github.com/[##_var_github-id_##]" target="_blank" d-dl-tooltip="깃허브">
-              <i class="fab fa-github-square"></i>
-            </a>
-          </li>
-          <li id="facebook-icon">
-            <a href="https://www.facebook.com/[##_var_facebook-id_##]" target="_blank" d-dl-tooltip="페이스북">
-              <i class="fab fa-facebook-square"></i>
-            </a>
-          </li>
-          <li id="twitter-icon">
-            <a href="https://twitter.com/[##_var_twitter-id_##]" target="_blank" d-dl-tooltip="트위터">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li id="instagram-icon">
-            <a href="https://www.instagram.com/[##_var_instagram-id_##]" target="_blank" d-dl-tooltip="인스타그램">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-        </ul>
-
-        <copyright id="copyright" style="opacity: .5; font-size: .5em; font-style: italic;">
-          <!--수정 금지-->
-          Designed by <a href="https://d-dl.tistory.com/" target="_blank">ㅓㅇ</a>
-        </copyright>
-
-      </div>
-    </nav>
-
-    <script>
-      if ('[##_var_github-id_##]' == '') {
-        $("#github-icon").css({
-          display: "none"
-        });
-      }
-      if ('[##_var_facebook-id_##]' == '') {
-        $("#facebook-icon").css({
-          display: "none"
-        });
-      }
-      if ('[##_var_twitter-id_##]' == '') {
-        $("#twitter-icon").css({
-          display: "none"
-        });
-      }
-      if ('[##_var_instagram-id_##]' == '') {
-        $("#instagram-icon").css({
-          display: "none"
-        });
-      }
-    </script>
-
-    <div id="main-sidebar-toggle-btn">
-      <a class="menu-trigger type7" href="#">
-        <span></span>
-        <span></span>
-        <span></span>
-      </a>
-    </div>
-
-    <div id="content-cover"></div>
-
-    <div class="content">
-
-      <s_list>
-        <div class="box no-padding [##_var_list-style_##]">
-          <header class="box content-head no-drag">
-            <div class="box-icon">
-              <div class="child-hidden">
-                <i class="far fa-folder" id="list-icon-default"></i>
-                <i class="far fa-folder-open" id="list-icon-category"></i>
-                <i class="fas fa-hashtag" id="list-icon-tag"></i>
-                <i class="fas fa-search" id="list-icon-search"></i>
-              </div>
-            </div>
-            <div class="head-title">
-              <h3 class="padding">
-                [##_list_conform_##]
-                <span id="list-count" class="list-count">([##_list_count_##])</span>
-              </h3>
-            </div>
-          </header>
-
-          <div class="article-list no-drag <s_if_var_thumbnail-list>thumb-list</s_if_var_thumbnail-list>">
-            <ul>
-
-              <div class="article-list-empty" style="display: none;">
-                <!-- style="display: none;" -->
-                <div class="shadow-box">
-                  <div class="background-dots hatch"></div>
-                  <div class="box-con">
-                    <h5>
-                      <span>
-                        아직 작성된 글이 없습니다...
-                      </span>
-                    </h5>
-                  </div>
+<body onload="load();" class="<s_if_var_sidebar-left-use> sidebar-left </s_if_var_sidebar-left-use>">
+    <s_t3>
+        <nav class="main-sidebar no-drag">
+            <div class="main-top">
+                <div class="main-profile">
+                    <div class="main-profile-img">
+                        <div class="background-cover" style="height: 100px; background-color: var(--base); background-image: url('[##_image_##]')"></div>
+                    </div>
+                    <div class="main-profile-bio">
+                        <h3 class="main-profile-blogtitle">
+                            <a href="[##_blog_link_##]">
+                                <s_not_var_blog-title-is-name>
+                                    [##_title_##]
+                                </s_not_var_blog-title-is-name>
+                                <s_if_var_blog-title-is-name>
+                                    [##_blogger_##]
+                                </s_if_var_blog-title-is-name>
+                            </a>
+                        </h3>
+                        <p class="main-profile-biosub">
+                            [##_desc_##]
+                        </p>
+                    </div>
                 </div>
-              </div>
 
-              <s_list_rep>
-                <li>
-                  <div class="thumb-active">
-                    <a class="thumb-list-article" href="[##_list_rep_link_##]">
-                      <div class="article-background">
-                        <div class=" background-dots"></div>
-                        <s_list_rep_thumbnail>
-                          <div class="background-cover" style="background-image: url('[##_list_rep_thumbnail_##]')"></div>
-                        </s_list_rep_thumbnail>
-                      </div>
-                      <div class="thumb-list-article-name">
-                        [##_list_rep_category_##] · [##_list_rep_regdate_##]
-                      </div>
-                      <div class="thumb-list-article-title">
-                        <h5><span class="text-longshort">[##_list_rep_title_##]</span></h5>
-                      </div>
-                    </a>
-                  </div>
+                <s_if_var_blog-side-menu>
+                    <s_if_var_blog-side-bar>
+                        <div class="vertical-line"></div>
+                    </s_if_var_blog-side-bar>
 
-                  <div class="list-active list-type-article">
-                    <a href="[##_list_rep_link_##]">
-                      <div class="flex">
-                        <div class="list-type-head" d-dl-tooltip="[##_list_rep_regdate_##]">
-                          <div class="list-type-thumb">
-                            <div class="change-icon" summary="[##_list_rep_summary_##]">
-                              <i class="fas fa-cube default"></i>
-                              <i class="fas fa-lock lock"></i>
-                            </div>
-                            <div class="thumbnail background-cover" style="background-image: url('');"></div>
-                          </div>
+                    <div class="main-profile-category">
+                        <div class="category-list">
+                            [##_blog_menu_##]
                         </div>
-                        <div class="list-type-title">
-                          <h4>
-                            [##_list_rep_title_##]
-                          </h4>
-                        </div>
-                      </div>
-                    </a>
-                    <div class="list-category" style="display: none;">
-                      <a href="[##_list_rep_category_link_##]">[##_list_rep_category_##]</a>
                     </div>
-                  </div>
-                </li>
-              </s_list_rep>
+                </s_if_var_blog-side-menu>
 
-            </ul>
-          </div>
-        </div>
-      </s_list>
+                <s_if_var_blog-side-bar>
+                    <div class="vertical-line"></div>
+                </s_if_var_blog-side-bar>
 
-      <s_notice_rep>
-        <section>
-          <article class="box no-padding" style="border-style: double; border-width: 8px;">
-            <header class="article-header no-drag">
-              <div class="article-background">
-                <div class="background-cover" style="background-image: url('<s_notice_rep_thumbnail>[##_notice_rep_thumbnail_url_##]</s_notice_rep_thumbnail>')"></div>
-                <div class=" background-dots"></div>
-              </div>
-              <div class="article-info">
-                <div class="article-category">
-                  <a href="[##_blog_link_##]notice">공지사항</a>
+                <div class="main-profile-category">
+                    <div class="category-list">
+                        [##_category_list_##]
+                    </div>
                 </div>
-                <h1 class="article-title">
-                  <a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a>
-                </h1>
-              </div>
-              <div class="article-action">
-                <time class="article-time">[##_notice_rep_date_##]</time>
-              </div>
-            </header>
-            <div class="article-content">
-              [##_notice_rep_desc_##]
-            </div>
-          </article>
-        </section>
-      </s_notice_rep>
-
-      <s_page_rep>
-        <section>
-          <article class="box no-padding" style="border-style: double; border-width: 8px;">
-            <header class="article-header no-drag">
-              <div class="article-background">
-                <div class="background-cover" style="background-color: var(--point);"></div>
-                <div class=" background-dots"></div>
-              </div>
-              <div class="article-info">
-                <h1 class="article-title" style="margin-top: .6em;">
-                  <a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a>
-                </h1>
-              </div>
-              <div class="article-action">
-                <time class="article-time">[##_article_rep_date_##]</time>
-              </div>
-            </header>
-            <div class="article-content">
-              [##_article_rep_desc_##]
-            </div>
-          </article>
-        </section>
-      </s_page_rep>
-
-      <s_article_rep>
-        <section>
-          <article class="box no-padding">
-            <header class="article-header no-drag">
-              <div class="article-background">
-                <div class="background-cover" style="background-image: url('<s_article_rep_thumbnail>[##_article_rep_thumbnail_raw_url_##]</s_article_rep_thumbnail>')"></div>
-                <div class=" background-dots"></div>
-              </div>
-              <div class="article-info">
-                <div class="article-category">
-                  <a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a>
-                </div>
-                <h1 class="article-title">
-                  <a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a>
-                </h1>
-              </div>
-              <s_tag_label>
-                <div class="article-tag-box tag-box">
-                  [##_tag_label_rep_##]
-                </div>
-              </s_tag_label>
-              <div class="article-action">
-                <time class="article-time">[##_article_rep_date_##]</time>
-                <s_ad_div>
-                  <span>
-                    <a href="#" onclick="[##_s_ad_m_onclick_##]" d-dl-tooltip="수정하기"><i class="fas fa-edit"></i></a>
-                    ·
-                    <a href="#" onclick="[##_s_ad_d_onclick_##]" d-dl-tooltip="삭제"><i class="fas fa-trash-alt"></i></a>
-                    ·
-                    <a href="#" onclick="[##_s_ad_s2_onclick_##]">[##_s_ad_s1_label_##]→[##_s_ad_s2_label_##]</a>
-                  </span>
-                </s_ad_div>
-              </div>
-            </header>
-
-            <div class="article-content">
-              [##_article_rep_desc_##]
             </div>
 
-            <footer class="article-footer">
-              <div class="article-footer-content no-drag">
-
-                <s_if_var_next-before-list>
-                  <div class="article-thumbnail-list">
-                    <div class="flex">
-                      <s_article_next>
-                        <a class="thumb-list-article" href="[##_article_next_link_##]">
-                          <div class="article-background">
-                            <s_article_next_thumbnail>
-                              <div class="background-cover" style="background-image: url('[##_article_next_thumbnail_link_##]')"></div>
-                            </s_article_next_thumbnail>
-                            <div class=" background-dots"></div>
-                          </div>
-                          <div class="thumb-list-article-name">
-                            다음 글
-                          </div>
-                          <div class="thumb-list-article-title">
-                            <h5><span class="text-short">[##_article_next_title_##]</span></h5>
-                          </div>
-                          <div class="before-arrow">
-                            <i class="fas fa-chevron-left"></i>
-                          </div>
-                        </a>
-                      </s_article_next>
-                      <div class="next-before-bar"></div>
-                      <s_article_prev>
-                        <a class="thumb-list-article" href="[##_article_prev_link_##]">
-                          <div class="article-background">
-                            <s_article_prev_thumbnail>
-                              <div class="background-cover" style="background-image: url('[##_article_prev_thumbnail_link_##]')"></div>
-                            </s_article_prev_thumbnail>
-                            <div class=" background-dots"></div>
-                          </div>
-                          <div class="thumb-list-article-name">
-                            이전 글
-                          </div>
-                          <div class="thumb-list-article-title">
-                            <h5><span class="text-short">[##_article_prev_title_##]</span></h5>
-                          </div>
-                          <div class="before-arrow">
-                            <i class="fas fa-chevron-left"></i>
-                          </div>
-                        </a>
-                      </s_article_prev>
-                    </div>
-                  </div>
-                </s_if_var_next-before-list>
-                <s_if_var_category-another-list>
-                  <s_article_related>
-                    <div class="article-footer-more article-thumbnail-list">
-                      <h5 class="comment-write-title" style="border-bottom: 1px solid;">카테고리의 다른 글...</h5>
-                      <div class="flex">
-                        <s_article_related_rep>
-                          <a class="thumb-list-article" href="[##_article_related_rep_link_##]">
-                            <div class="article-background">
-                              <div class=" background-dots"></div>
-                              <s_article_related_rep_thumbnail>
-                                <div class="background-cover" style="background-image: url('[##_article_related_rep_thumbnail_link_##]')"></div>
-                              </s_article_related_rep_thumbnail>
-                            </div>
-                            <div class="thumb-list-article-title">
-                              <h5><span class="text-short">[##_article_related_rep_title_##]</span></h5>
-                            </div>
-                          </a>
-                          <div class="next-before-bar"></div>
-                        </s_article_related_rep>
-                      </div>
-                    </div>
-                  </s_article_related>
-                </s_if_var_category-another-list>
-                <s_rp_count>
-                  <div class="article-footer-counter">
-                    <a href="javascript:return false" class="comment-counter-btn" d-dl-tooltip="댓글 접기/피기">
-                      <i class="far fa-comment-alt"></i> [##_article_rep_rp_cnt_##]
-                    </a>
-                  </div>
-                </s_rp_count>
-              </div>
-
-              <s_rp>
-                <div class="comment-pack <s_if_var_comment-box-shot>maxheight-hidden</s_if_var_comment-box-shot> ">
-                  <div class="comment-list">
-                    <s_rp_container>
-                      <ul>
-                        <s_rp_rep>
-                          <li>
-                            <div class="all-comment-box">
-                              <div id="[##_rp_rep_id_##]" class="comment-box [##_rp_rep_class_##]">
-                                <div>
-                                  <div class="comment-icon">
-                                    <div class="user">
-                                      <i class="fas fa-user"></i>
-                                    </div>
-                                    <div class="lock">
-                                      <i class="fas fa-lock"></i>
-                                    </div>
-                                    <div class="thumbnail background-cover" style="background-image: url('[##_rp_rep_logo_##]')"></div>
-                                  </div>
-                                </div>
-                                <div class="comment-content">
-                                  <header class="no-drag">
-                                    <div class="comment-action no-drag">
-                                      <a href="#" onclick="copy('[##_rp_rep_link_##]')" d-dl-tooltip="댓글 링크 복사하기"><i class="fas fa-clone"></i></a>
-                                      ·
-                                      <a href="#" d-dl-tooltip="수정하기"><i class="fas fa-edit" onclick="[##_rp_rep_onclick_delete_##]"></i></a>
-                                      ·
-                                      <a href="#" onclick="[##_rp_rep_onclick_reply_##]" d-dl-tooltip="답 댓글 달기"><i class="fas fa-comments"></i></a>
-                                    </div>
-                                    <h5>
-                                      <a href="[##_rp_rep_link_##]">
-                                        [##_rp_rep_name_##]
-                                      </a>
-                                    </h5>
-                                    <time>[##_rp_rep_date_##]</time>
-                                  </header>
-                                  <p>
-                                    [##_rp_rep_desc_##]
-                                  </p>
-                                </div>
-                              </div>
-                              <s_rp2_container>
-                                <ul>
-                                  <s_rp2_rep>
-                                    <li>
-                                      <div id="[##_rp_rep_id_##]" class="sub-comment-box [##_rp_rep_class_##]">
-                                        <div>
-                                          <div class="comment-icon">
-                                            <div class="user">
-                                              <i class="fas fa-user"></i>
-                                            </div>
-                                            <div class="lock">
-                                              <i class="fas fa-lock"></i>
-                                            </div>
-                                            <div class="thumbnail background-cover" style="background-image: url('[##_rp_rep_logo_##]')"></div>
-                                          </div>
-                                        </div>
-                                        <div class="comment-content">
-                                          <header class="no-drag">
-                                            <div class="comment-action no-drag">
-                                              <a href="#" d-dl-tooltip="수정하기"><i class="fas fa-edit" onclick="[##_rp_rep_onclick_delete_##]"></i></a>
-                                              ·
-                                              <a href="#" onclick="copy('[##_rp_rep_link_##]')" d-dl-tooltip="댓글 링크 복사하기"><i class="fas fa-clone"></i></a>
-                                              ·
-                                              <a href="#" onclick="[##_rp_rep_onclick_reply_##]" d-dl-tooltip="답 댓글 달기"><i class="fas fa-comments"></i></a>
-                                            </div>
-                                            <h5>
-                                              <a href="[##_rp_rep_link_##]">
-                                                [##_rp_rep_name_##]
-                                              </a>
-                                            </h5>
-                                            <time>[##_rp_rep_date_##]</time>
-                                          </header>
-                                          <p>
-                                            [##_rp_rep_desc_##]
-                                          </p>
-                                        </div>
-                                      </div>
-                                    </li>
-                                  </s_rp2_rep>
-                                </ul>
-                              </s_rp2_container>
-                            </div>
-                          </li>
-                        </s_rp_rep>
-                      </ul>
-                    </s_rp_container>
-                  </div>
-
-
-                  <div class="comment-write background-dots hatch">
-                    <s_rp_input_form>
-                      <h5 class="comment-write-title">WRITE COMMENT...</h5>
-                      <div class="comment-write-form">
+            <div class="main-profile-quickmenu">
+                <s_search>
+                    <form class="main-search-form">
                         <div class="flex">
-                          <div>
-                            <div class="flex">
-                              <s_rp_member>
-                                <s_rp_guest>
-                                  <input type="text" name="[##_rp_input_name_##]" placeholder="NAME..." maxlength="12" required />
-                                  <input type="password" name="[##_rp_input_password_##]" placeholder="PASSWORD..." maxlength="12" required />
-                                  <input type="url" name="[##_rp_input_homepage_##]" placeholder="HOMAPAGE..." maxlength="50" />
-                                </s_rp_guest>
-                                <span class="check-label">
-                                  <input type="checkbox" name="[##_rp_input_is_secret_##]" id="[##_rp_input_is_secret_##]" />
-                                  <label for="[##_rp_input_is_secret_##]">비밀글...</label>
-                                </span>
-                              </s_rp_member>
-                            </div>
-                            <div class="flex">
-                              <textarea name="[##_rp_input_comment_##]" placeholder="COMMENT..." required></textarea>
-                            </div>
-                          </div>
-                          <button type="submit" onclick="[##_rp_onclick_submit_##]">OK</button>
+                            <input type="text" name="[##_search_name_##]" maxlength="10" value="[##_search_text_##]" required />
+                            <button type="submit" onclick="[##_search_onclick_submit_##]"><i class="fas fa-search"></i></button>
                         </div>
-                      </div>
-                    </s_rp_input_form>
-                  </div>
-                </div>
-              </s_rp>
-            </footer>
-          </article>
-        </section>
-      </s_article_rep>
+                    </form>
+                </s_search>
+                <ul>
+                    <li>
+                        <a href="[##_blog_link_##]manage" d-dl-tooltip="환경설정">
+                            <i class="fas fa-wrench"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="[##_blog_link_##]manage/post" d-dl-tooltip="글쓰기">
+                            <i class="fas fa-feather-alt"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="[##_guestbook_link_##]" d-dl-tooltip="방명록">
+                            <i class="fas fa-book"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="[##_taglog_link_##]" d-dl-tooltip="태그 클라우드">
+                            <i class="fas fa-hashtag"></i>
+                        </a>
+                    </li>
+                    <s_if_var_github-id>
+                        <li id="github-icon">
+                            <a href="https://github.com/[##_var_github-id_##]" target="_blank" d-dl-tooltip="깃허브">
+                                <i class="fab fa-github-square"></i>
+                            </a>
+                        </li>
+                    </s_if_var_github-id>
+                    <s_if_var_facebook-id>
+                        <li id="facebook-icon">
+                            <a href="https://www.facebook.com/[##_var_facebook-id_##]" target="_blank" d-dl-tooltip="페이스북">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                        </li>
+                    </s_if_var_facebook-id>
+                    <s_if_var_twitter-id>
+                        <li id="twitter-icon">
+                            <a href="https://twitter.com/[##_var_twitter-id_##]" target="_blank" d-dl-tooltip="트위터">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                    </s_if_var_twitter-id>
+                    <s_if_var_instagram-id>
+                        <li id="instagram-icon">
+                            <a href="https://www.instagram.com/[##_var_instagram-id_##]" target="_blank" d-dl-tooltip="인스타그램">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </s_if_var_instagram-id>
+                </ul>
 
-      <s_article_protected>
-        <div class="box no-padding">
-          <div class="box">
-            <h5 style="font-style: italic">
-              [##_article_rep_title_##]
-            </h5>
-          </div>
-          <div class="lock-post background-dots">
-            <div class="lock-box">
-              <div>
-                <div class="lock-icon">
-                  <i class="fas fa-lock"></i>
-                </div>
-                <div class="lock-form flex">
-                  <input type="password" class="password" id="[##_article_password_##]" name="[##_article_password_##]" maxlength="12" placeholder="PASSWORD..." onkeydown="if (event.keyCode == 13)[##_article_dissolve_##]" required />
-                  <button type="submit" value="submit" onclick="[##_article_dissolve_##]"><i class="fas fa-key"></i></button>
-                </div>
-              </div>
+                <copyright id="copyright" style="opacity: .5; font-size: .5em; font-style: italic;">
+                    <!--수정 금지-->
+                    Designed by <a href="https://d-dl.tistory.com/" target="_blank">ㅓㅇ</a>
+                </copyright>
             </div>
-          </div>
+        </nav>
+        <div id="main-sidebar-toggle-btn">
+            <a class="menu-trigger type7" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
         </div>
-      </s_article_protected>
 
-      <s_tag>
-        <div class="box no-padding">
-          <header class="box content-head no-drag">
-            <div class="box-icon">
-              <div>
-                <i class="fas fa-hashtag"></i>
-              </div>
-            </div>
-            <div class="head-title">
-              <h3 class="padding">
-                태그 클라우드
-              </h3>
-            </div>
-          </header>
-          <div class="tag-list-box tag-box no-drag">
-            <s_tag_rep>
-              <a href="[##_tag_link_##]" class="[##_tag_class_##]">
-                [##_tag_name_##]
-              </a>
-            </s_tag_rep>
-          </div>
-        </div>
-      </s_tag>
+        <div class="content">
 
-      <s_guest>
-        <div class="box no-padding">
-          <header class="box content-head no-drag">
-            <div class="box-icon">
-              <div>
-                <i class="fas fa-book"></i>
-              </div>
-            </div>
-            <div class="head-title">
-              <h3 class="padding">
-                방명록
-              </h3>
-            </div>
-          </header>
-
-          <s_guest_input_form>
-            <div class="comment-write background-dots hatch" style="border-top:0; border-bottom: 2px solid;">
-              <h5 class="comment-write-title">WRITE GUESTBOOK...</h5>
-              <div class="comment-write-form">
-                <div class="flex">
-                  <div>
-                    <s_guest_member>
-                      <s_guest_form>
-                        <div class="flex">
-                          <input type="text" name="[##_guest_input_name_##]" value="[##_guest_name_##]" placeholder="NAME..." maxlength="12" required />
-                          <input type="password" name="[##_guest_input_password_##]" value="[##_guest_password_##]" placeholder="PASSWORD..." maxlength="12" required />
-                          <input type="url" name="[##_guest_input_homepage_##]" value="[##_guest_homepage_##]" placeholder="HOMAPAGE..." maxlength="50" />
-                        </div>
-                      </s_guest_form>
-                    </s_guest_member>
-                    <div class="flex">
-                      <textarea name="[##_guest_textarea_body_##]" placeholder="COMMENT..." required></textarea>
-                    </div>
-                  </div>
-                  <button type="submit" onclick="[##_guest_onclick_submit_##]">OK</button>
-                </div>
-              </div>
-              </h5>
-            </div>
-          </s_guest_input_form>
-
-          <s_guest_container>
-            <div class="comment-list">
-              <ul>
-                <s_guest_rep>
-                  <li>
-                    <div class="all-comment-box all-guest-box">
-                      <div id="[##_guest_rep_id_##]" class="comment-box guest-comment-box [##_guest_rep_class_##]">
-                        <div class="guest-side"></div>
-                        <div class="comment-content guest-comment-content">
-                          <header class="no-drag">
-                            <div class="comment-action no-drag">
-                              <a href="#" d-dl-tooltip="수정하기" onclick="[##_guest_rep_onclick_delete_##]"><i class="fas fa-edit"></i></a>
-                              ·
-                              <a href="#" d-dl-tooltip="답 댓글 달기"><i class="fas fa-comments" onclick="[##_guest_rep_onclick_reply_##]"></i></a>
+            <s_list>
+                <div class="box no-padding">
+                    <header class="box content-head no-drag">
+                        <div class="box-icon">
+                            <div class="child-hidden">
+                                <i class="far fa-folder" id="list-icon-default"></i>
+                                <i class="far fa-folder-open" id="list-icon-category"></i>
+                                <i class="fas fa-hashtag" id="list-icon-tag"></i>
+                                <i class="fas fa-search" id="list-icon-search"></i>
                             </div>
-                            <h5>
-                              [##_guest_rep_name_##]
-                            </h5>
-                            <time>[##_guest_rep_date_##]</time>
-                          </header>
-                          <p>
-                            [##_guest_rep_desc_##]
-                          </p>
                         </div>
-                      </div>
-                      <s_guest_reply_container>
+                        <div class="head-title">
+                            <h3 class="padding">
+                                [##_list_conform_##]
+                                <span id="list-count" class="list-count">([##_list_count_##])</span>
+                            </h3>
+                        </div>
+                    </header>
+
+                    <div class="article-list no-drag [##_list_style_##]">
                         <ul>
-                          <s_guest_reply_rep>
-                            <li>
-                              <div id="[##_guest_rep_id_##]" class="sub-comment-box sub-guest-comment-box [##_guest_rep_class_##]">
-                                <div class="guest-side background-dots"></div>
-                                <div class="comment-content guest-comment-content">
-                                  <header class="no-drag">
-                                    <div class="comment-action no-drag">
-                                      <a href="#" d-dl-tooltip="수정하기" onclick="[##_guest_rep_onclick_delete_##]"><i class="fas fa-edit"></i></a>
+
+                            <s_list_empty>
+                                <div class="article-list-empty" style="display: none;">
+                                    <!-- style="display: none;" -->
+                                    <div class="shadow-box">
+                                        <div class="background-dots hatch"></div>
+                                        <div class="box-con">
+                                            <h5>
+                                                <span>
+                                                    아직 작성된 글이 없습니다...
+                                                </span>
+                                            </h5>
+                                        </div>
                                     </div>
-                                    <h5>
-                                      [##_guest_rep_name_##]
-                                    </h5>
-                                    <time>[##_guest_rep_date_##]</time>
-                                  </header>
-                                  <p>
-                                    [##_guest_rep_desc_##]
-                                  </p>
                                 </div>
-                              </div>
-                            </li>
-                          </s_guest_reply_rep>
+                            </s_list_empty>
+
+                            <s_list_rep>
+                                <li>
+                                    <div class="thumb-active">
+                                        <a class="thumb-list-article" href="[##_list_rep_link_##]">
+                                            <div class="article-background">
+                                                <div class=" background-dots"></div>
+                                                <s_list_rep_thumbnail>
+                                                    <div class="background-cover" style="background-image: url('[##_list_rep_thumbnail_##]')"></div>
+                                                </s_list_rep_thumbnail>
+                                            </div>
+                                            <div class="thumb-list-article-name">
+                                                [##_list_rep_category_##] · [##_list_rep_regdate_##]
+                                            </div>
+                                            <div class="thumb-list-article-title">
+                                                <h5><span class="text-longshort">[##_list_rep_title_##]</span></h5>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="list-active list-type-article">
+                                        <a href="[##_list_rep_link_##]">
+                                            <div class="flex">
+                                                <div class="list-type-head" d-dl-tooltip="[##_list_rep_regdate_##]">
+                                                    <div class="list-type-thumb">
+                                                        <div class="change-icon" summary="[##_list_rep_summary_##]">
+                                                            <i class="fas fa-cube default"></i>
+                                                            <i class="fas fa-lock lock"></i>
+                                                        </div>
+                                                        <div class="thumbnail background-cover" style="background-image: url('');"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="list-type-title">
+                                                    <h4>
+                                                        [##_list_rep_title_##]
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="list-category" style="display: none;">
+                                            <a href="[##_list_rep_category_link_##]">[##_list_rep_category_##]</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </s_list_rep>
+
                         </ul>
-                      </s_guest_reply_container>
                     </div>
-                  </li>
-                </s_guest_rep>
-              </ul>
-            </div>
-            <!--코멘트 리스트 종료-->
-          </s_guest_container>
+                </div>
+            </s_list>
+
+            <s_notice_rep>
+                <section>
+                    <article class="box no-padding" style="border-style: double; border-width: 8px;">
+                        <header class="article-header no-drag">
+                            <div class="article-background">
+                                <div class="background-cover" style="background-image: url('<s_notice_rep_thumbnail>[##_notice_rep_thumbnail_url_##]</s_notice_rep_thumbnail>')"></div>
+                                <div class=" background-dots"></div>
+                            </div>
+                            <div class="article-info">
+                                <div class="article-category">
+                                    <a href="[##_blog_link_##]notice">공지사항</a>
+                                </div>
+                                <h1 class="article-title">
+                                    <a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a>
+                                </h1>
+                            </div>
+                            <div class="article-action">
+                                <time class="article-time">[##_notice_rep_date_##]</time>
+                            </div>
+                        </header>
+                        <div class="article-content">
+                            [##_notice_rep_desc_##]
+                        </div>
+                    </article>
+                </section>
+            </s_notice_rep>
+
+            <s_page_rep>
+                <section>
+                    <article class="box no-padding" style="border-style: double; border-width: 8px;">
+                        <header class="article-header no-drag">
+                            <div class="article-background">
+                                <div class="background-cover" style="background-color: var(--point);"></div>
+                                <div class=" background-dots"></div>
+                            </div>
+                            <div class="article-info">
+                                <h1 class="article-title" style="margin-top: .6em;">
+                                    <a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a>
+                                </h1>
+                            </div>
+                            <div class="article-action">
+                                <time class="article-time">[##_article_rep_date_##]</time>
+                            </div>
+                        </header>
+                        <div class="article-content">
+                            [##_article_rep_desc_##]
+                        </div>
+                    </article>
+                </section>
+            </s_page_rep>
+
+            <s_article_rep>
+                <section>
+                    <article class="box no-padding">
+                        <header class="article-header no-drag">
+                            <div class="article-background">
+                                <div class="background-cover" style="background-image: url('<s_article_rep_thumbnail>[##_article_rep_thumbnail_raw_url_##]</s_article_rep_thumbnail>')"></div>
+                                <div class=" background-dots"></div>
+                            </div>
+                            <div class="article-info">
+                                <div class="article-category">
+                                    <a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a>
+                                </div>
+                                <h1 class="article-title">
+                                    <a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a>
+                                </h1>
+                            </div>
+                            <s_tag_label>
+                                <div class="article-tag-box tag-box">
+                                    [##_tag_label_rep_##]
+                                </div>
+                            </s_tag_label>
+                            <div class="article-action">
+                                <time class="article-time">[##_article_rep_date_##]</time>
+                                <s_ad_div>
+                                    <span>
+                                        <a href="#" onclick="[##_s_ad_m_onclick_##]" d-dl-tooltip="수정하기"><i class="fas fa-edit"></i></a>
+                                        ·
+                                        <a href="#" onclick="[##_s_ad_d_onclick_##]" d-dl-tooltip="삭제"><i class="fas fa-trash-alt"></i></a>
+                                        ·
+                                        <a href="#" onclick="[##_s_ad_s2_onclick_##]">[##_s_ad_s1_label_##]→[##_s_ad_s2_label_##]</a>
+                                    </span>
+                                </s_ad_div>
+                            </div>
+                        </header>
+
+                        <div class="article-content">
+                            [##_article_rep_desc_##]
+                        </div>
+
+                        <footer class="article-footer">
+                            <div class="article-footer-content no-drag">
+
+                                <s_if_var_next-before-list>
+                                    <div class="article-thumbnail-list">
+                                        <div class="flex">
+                                            <s_article_next>
+                                                <a class="thumb-list-article" href="[##_article_next_link_##]">
+                                                    <div class="article-background">
+                                                        <s_article_next_thumbnail>
+                                                            <div class="background-cover" style="background-image: url('[##_article_next_thumbnail_link_##]')"></div>
+                                                        </s_article_next_thumbnail>
+                                                        <div class=" background-dots"></div>
+                                                    </div>
+                                                    <div class="thumb-list-article-name">
+                                                        다음 글
+                                                    </div>
+                                                    <div class="thumb-list-article-title">
+                                                        <h5><span class="text-short">[##_article_next_title_##]</span></h5>
+                                                    </div>
+                                                    <div class="before-arrow">
+                                                        <i class="fas fa-chevron-left"></i>
+                                                    </div>
+                                                </a>
+                                            </s_article_next>
+                                            <div class="next-before-bar"></div>
+                                            <s_article_prev>
+                                                <a class="thumb-list-article" href="[##_article_prev_link_##]">
+                                                    <div class="article-background">
+                                                        <s_article_prev_thumbnail>
+                                                            <div class="background-cover" style="background-image: url('[##_article_prev_thumbnail_link_##]')"></div>
+                                                        </s_article_prev_thumbnail>
+                                                        <div class=" background-dots"></div>
+                                                    </div>
+                                                    <div class="thumb-list-article-name">
+                                                        이전 글
+                                                    </div>
+                                                    <div class="thumb-list-article-title">
+                                                        <h5><span class="text-short">[##_article_prev_title_##]</span></h5>
+                                                    </div>
+                                                    <div class="before-arrow">
+                                                        <i class="fas fa-chevron-left"></i>
+                                                    </div>
+                                                </a>
+                                            </s_article_prev>
+                                        </div>
+                                    </div>
+                                </s_if_var_next-before-list>
+                                <s_if_var_category-another-list>
+                                    <s_article_related>
+                                        <div class="article-footer-more article-thumbnail-list">
+                                            <h5 class="comment-write-title" style="border-bottom: 1px solid;">카테고리의 다른 글...</h5>
+                                            <div class="flex">
+                                                <s_article_related_rep>
+                                                    <a class="thumb-list-article" href="[##_article_related_rep_link_##]">
+                                                        <div class="article-background">
+                                                            <div class=" background-dots"></div>
+                                                            <s_article_related_rep_thumbnail>
+                                                                <div class="background-cover" style="background-image: url('[##_article_related_rep_thumbnail_link_##]')"></div>
+                                                            </s_article_related_rep_thumbnail>
+                                                        </div>
+                                                        <div class="thumb-list-article-title">
+                                                            <h5><span class="text-short">[##_article_related_rep_title_##]</span></h5>
+                                                        </div>
+                                                    </a>
+                                                    <div class="next-before-bar"></div>
+                                                </s_article_related_rep>
+                                            </div>
+                                        </div>
+                                    </s_article_related>
+                                </s_if_var_category-another-list>
+                                <s_rp_count>
+                                    <div class="article-footer-counter">
+                                        <a href="javascript:return false" class="comment-counter-btn" d-dl-tooltip="댓글 접기/피기">
+                                            <i class="far fa-comment-alt"></i> [##_article_rep_rp_cnt_##]
+                                        </a>
+                                    </div>
+                                </s_rp_count>
+                            </div>
+
+                            <s_rp>
+                                <div class="comment-pack <s_if_var_comment-box-shot>maxheight-hidden</s_if_var_comment-box-shot> ">
+                                    <div class="comment-list">
+                                        <s_rp_container>
+                                            <ul>
+                                                <s_rp_rep>
+                                                    <li>
+                                                        <div class="all-comment-box">
+                                                            <div id="[##_rp_rep_id_##]" class="comment-box [##_rp_rep_class_##]">
+                                                                <div>
+                                                                    <div class="comment-icon">
+                                                                        <div class="user">
+                                                                            <i class="fas fa-user"></i>
+                                                                        </div>
+                                                                        <div class="lock">
+                                                                            <i class="fas fa-lock"></i>
+                                                                        </div>
+                                                                        <div class="thumbnail background-cover" style="background-image: url('[##_rp_rep_logo_##]')"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="comment-content">
+                                                                    <header class="no-drag">
+                                                                        <div class="comment-action no-drag">
+                                                                            <a href="#" onclick="copy('[##_rp_rep_link_##]')" d-dl-tooltip="댓글 링크 복사하기"><i class="fas fa-clone"></i></a>
+                                                                            ·
+                                                                            <a href="#" d-dl-tooltip="수정하기"><i class="fas fa-edit" onclick="[##_rp_rep_onclick_delete_##]"></i></a>
+                                                                            ·
+                                                                            <a href="#" onclick="[##_rp_rep_onclick_reply_##]" d-dl-tooltip="답 댓글 달기"><i class="fas fa-comments"></i></a>
+                                                                        </div>
+                                                                        <h5>
+                                                                            <a href="[##_rp_rep_link_##]">
+                                                                                [##_rp_rep_name_##]
+                                                                            </a>
+                                                                        </h5>
+                                                                        <time>[##_rp_rep_date_##]</time>
+                                                                    </header>
+                                                                    <p>
+                                                                        [##_rp_rep_desc_##]
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <s_rp2_container>
+                                                                <ul>
+                                                                    <s_rp2_rep>
+                                                                        <li>
+                                                                            <div id="[##_rp_rep_id_##]" class="sub-comment-box [##_rp_rep_class_##]">
+                                                                                <div>
+                                                                                    <div class="comment-icon">
+                                                                                        <div class="user">
+                                                                                            <i class="fas fa-user"></i>
+                                                                                        </div>
+                                                                                        <div class="lock">
+                                                                                            <i class="fas fa-lock"></i>
+                                                                                        </div>
+                                                                                        <div class="thumbnail background-cover" style="background-image: url('[##_rp_rep_logo_##]')"></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="comment-content">
+                                                                                    <header class="no-drag">
+                                                                                        <div class="comment-action no-drag">
+                                                                                            <a href="#" d-dl-tooltip="수정하기"><i class="fas fa-edit" onclick="[##_rp_rep_onclick_delete_##]"></i></a>
+                                                                                            ·
+                                                                                            <a href="#" onclick="copy('[##_rp_rep_link_##]')" d-dl-tooltip="댓글 링크 복사하기"><i class="fas fa-clone"></i></a>
+                                                                                        </div>
+                                                                                        <h5>
+                                                                                            <a href="[##_rp_rep_link_##]">
+                                                                                                [##_rp_rep_name_##]
+                                                                                            </a>
+                                                                                        </h5>
+                                                                                        <time>[##_rp_rep_date_##]</time>
+                                                                                    </header>
+                                                                                    <p>
+                                                                                        [##_rp_rep_desc_##]
+                                                                                    </p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                    </s_rp2_rep>
+                                                                </ul>
+                                                            </s_rp2_container>
+                                                        </div>
+                                                    </li>
+                                                </s_rp_rep>
+                                            </ul>
+                                        </s_rp_container>
+                                    </div>
+
+
+                                    <div class="comment-write background-dots hatch">
+                                        <s_rp_input_form>
+                                            <h5 class="comment-write-title">WRITE COMMENT...</h5>
+                                            <div class="comment-write-form">
+                                                <div class="flex">
+                                                    <div>
+                                                        <div class="flex">
+                                                            <s_rp_member>
+                                                                <s_rp_guest>
+                                                                    <input type="text" name="[##_rp_input_name_##]" placeholder="NAME..." maxlength="12" required />
+                                                                    <input type="password" name="[##_rp_input_password_##]" placeholder="PASSWORD..." maxlength="12" required />
+                                                                    <input type="url" name="[##_rp_input_homepage_##]" placeholder="HOMAPAGE..." maxlength="50" />
+                                                                </s_rp_guest>
+                                                                <span class="check-label">
+                                                                    <input type="checkbox" name="[##_rp_input_is_secret_##]" id="[##_rp_input_is_secret_##]" />
+                                                                    <label for="[##_rp_input_is_secret_##]">비밀글...</label>
+                                                                </span>
+                                                            </s_rp_member>
+                                                        </div>
+                                                        <div class="flex">
+                                                            <textarea name="[##_rp_input_comment_##]" placeholder="COMMENT..." required></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <button type="submit" onclick="[##_rp_onclick_submit_##]">OK</button>
+                                                </div>
+                                            </div>
+                                        </s_rp_input_form>
+                                    </div>
+                                </div>
+                            </s_rp>
+                        </footer>
+                    </article>
+                </section>
+            </s_article_rep>
+
+            <s_article_protected>
+                <div class="box no-padding">
+                    <div class="box">
+                        <h5 style="font-style: italic">
+                            [##_article_rep_title_##]
+                        </h5>
+                    </div>
+                    <div class="lock-post background-dots">
+                        <div class="lock-box">
+                            <div>
+                                <div class="lock-icon">
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                                <div class="lock-form flex">
+                                    <input type="password" class="password" id="[##_article_password_##]" name="[##_article_password_##]" maxlength="12" placeholder="PASSWORD..." onkeydown="if (event.keyCode == 13)[##_article_dissolve_##]" required />
+                                    <button type="submit" value="submit" onclick="[##_article_dissolve_##]"><i class="fas fa-key"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </s_article_protected>
+
+            <s_tag>
+                <div class="box no-padding">
+                    <header class="box content-head no-drag">
+                        <div class="box-icon">
+                            <div>
+                                <i class="fas fa-hashtag"></i>
+                            </div>
+                        </div>
+                        <div class="head-title">
+                            <h3 class="padding">
+                                태그 클라우드
+                            </h3>
+                        </div>
+                    </header>
+                    <div class="tag-list-box tag-box no-drag">
+                        <s_tag_rep>
+                            <a href="[##_tag_link_##]" class="[##_tag_class_##]">
+                                [##_tag_name_##]
+                            </a>
+                        </s_tag_rep>
+                    </div>
+                </div>
+            </s_tag>
+
+            <s_guest>
+                <div class="box no-padding">
+                    <header class="box content-head no-drag">
+                        <div class="box-icon">
+                            <div>
+                                <i class="fas fa-book"></i>
+                            </div>
+                        </div>
+                        <div class="head-title">
+                            <h3 class="padding">
+                                방명록
+                            </h3>
+                        </div>
+                    </header>
+
+                    <s_guest_input_form>
+                        <div class="comment-write background-dots hatch" style="border-top:0; border-bottom: 2px solid;">
+                            <h5 class="comment-write-title">WRITE GUESTBOOK...</h5>
+                            <div class="comment-write-form">
+                                <div class="flex">
+                                    <div>
+                                        <s_guest_member>
+                                            <s_guest_form>
+                                                <div class="flex">
+                                                    <input type="text" name="[##_guest_input_name_##]" value="[##_guest_name_##]" placeholder="NAME..." maxlength="12" required />
+                                                    <input type="password" name="[##_guest_input_password_##]" value="[##_guest_password_##]" placeholder="PASSWORD..." maxlength="12" required />
+                                                    <input type="url" name="[##_guest_input_homepage_##]" value="[##_guest_homepage_##]" placeholder="HOMAPAGE..." maxlength="50" />
+                                                </div>
+                                            </s_guest_form>
+                                        </s_guest_member>
+                                        <div class="flex">
+                                            <textarea name="[##_guest_textarea_body_##]" placeholder="COMMENT..." required></textarea>
+                                        </div>
+                                    </div>
+                                    <button type="submit" onclick="[##_guest_onclick_submit_##]">OK</button>
+                                </div>
+                            </div>
+                            </h5>
+                        </div>
+                    </s_guest_input_form>
+
+                    <s_guest_container>
+                        <div class="comment-list">
+                            <ul>
+                                <s_guest_rep>
+                                    <li>
+                                        <div class="all-comment-box all-guest-box">
+                                            <div id="[##_guest_rep_id_##]" class="comment-box guest-comment-box [##_guest_rep_class_##]">
+                                                <div class="guest-side"></div>
+                                                <div class="comment-content guest-comment-content">
+                                                    <header class="no-drag">
+                                                        <div class="comment-action no-drag">
+                                                            <a href="#" d-dl-tooltip="수정하기" onclick="[##_guest_rep_onclick_delete_##]"><i class="fas fa-edit"></i></a>
+                                                            ·
+                                                            <a href="#" d-dl-tooltip="답 댓글 달기"><i class="fas fa-comments" onclick="[##_guest_rep_onclick_reply_##]"></i></a>
+                                                        </div>
+                                                        <h5>
+                                                            [##_guest_rep_name_##]
+                                                        </h5>
+                                                        <time>[##_guest_rep_date_##]</time>
+                                                    </header>
+                                                    <p>
+                                                        [##_guest_rep_desc_##]
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <s_guest_reply_container>
+                                                <ul>
+                                                    <s_guest_reply_rep>
+                                                        <li>
+                                                            <div id="[##_guest_rep_id_##]" class="sub-comment-box sub-guest-comment-box [##_guest_rep_class_##]">
+                                                                <div class="guest-side background-dots"></div>
+                                                                <div class="comment-content guest-comment-content">
+                                                                    <header class="no-drag">
+                                                                        <div class="comment-action no-drag">
+                                                                            <a href="#" d-dl-tooltip="수정하기" onclick="[##_guest_rep_onclick_delete_##]"><i class="fas fa-edit"></i></a>
+                                                                        </div>
+                                                                        <h5>
+                                                                            [##_guest_rep_name_##]
+                                                                        </h5>
+                                                                        <time>[##_guest_rep_date_##]</time>
+                                                                    </header>
+                                                                    <p>
+                                                                        [##_guest_rep_desc_##]
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </s_guest_reply_rep>
+                                                </ul>
+                                            </s_guest_reply_container>
+                                        </div>
+                                    </li>
+                                </s_guest_rep>
+                            </ul>
+                        </div>
+                        <!--코멘트 리스트 종료-->
+                    </s_guest_container>
+                </div>
+            </s_guest>
+
+            <s_paging>
+                <div class="content-paging no-drag">
+                    <a [##_prev_page_##] class="[##_no_more_prev_##]"><i class="fas fa-chevron-left  fa-fw"></i> </a>
+                    <s_paging_rep>
+                        <a [##_paging_rep_link_##]>[##_paging_rep_link_num_##]</a>
+                    </s_paging_rep>
+                    <a [##_next_page_##] class="[##_no_more_next_##]"> <i class="fas fa-chevron-right fa-fw"></i></a>
+                </div>
+            </s_paging>
         </div>
-      </s_guest>
 
-      <s_paging>
-        <div class="content-paging no-drag">
-          <a [##_prev_page_##] class="[##_no_more_prev_##]"><i class="fas fa-chevron-left  fa-fw"></i> </a>
-          <s_paging_rep>
-            <a [##_paging_rep_link_##]>[##_paging_rep_link_num_##]</a>
-          </s_paging_rep>
-          <a [##_next_page_##] class="[##_no_more_next_##]"> <i class="fas fa-chevron-right fa-fw"></i></a>
         </div>
-      </s_paging>
-    </div>
 
-    </div>
+        <script>
+            $(document).ready(function() {
 
-    <script>
-      $(document).ready(function() {
+                var linkHref = $(location).attr('href');
 
-        var linkHref = $(location).attr('href');
+                if (linkHref.indexOf("[##_blog_link_##]category") !== -1) {
+                    $('#list-icon-category').css({
+                        display: 'inline'
+                    });
+                } else if (linkHref.indexOf("[##_blog_link_##]tag") !== -1) {
+                    $('#list-icon-tag').css({
+                        display: 'inline'
+                    });
+                } else if (linkHref.indexOf("[##_blog_link_##]search") !== -1) {
+                    $('#list-icon-search').css({
+                        display: 'inline'
+                    });
+                } else {
+                    $('#list-icon-default').css({
+                        display: 'inline'
+                    });
+                }
 
-        if (linkHref.indexOf("[##_blog_link_##]category") !== -1) {
-          $('#list-icon-category').css({
-            display: 'inline'
-          });
-        } else if (linkHref.indexOf("[##_blog_link_##]tag") !== -1) {
-          $('#list-icon-tag').css({
-            display: 'inline'
-          });
-        } else if (linkHref.indexOf("[##_blog_link_##]search") !== -1) {
-          $('#list-icon-search').css({
-            display: 'inline'
-          });
-        } else {
-          $('#list-icon-default').css({
-            display: 'inline'
-          });
-        }
+                $(".content a[target='_blank']:not(.container_postbtn *)").each(function() {
+                    $(this).attr("d-dl-tooltip", '');
+                    $(this).addClass("icon-tooltip");
+                    $(this).addClass("blank-icon");
+                });
 
-        if ($('#list-count').html() == "(0)") {
-          $('.article-list-empty').css({
-            display: 'block'
-          });
-        }
+                $(".text-short").each(function() {
+                    var length = 24;
+                    $(this).each(function() {
+                        var orig = $(this).text();
+                        if (orig.length >= length) {
+                            $(this).text(orig.substr(0, length) + '...');
+                        }
+                    });
+                });
 
-        $(".content a[target='_blank']:not(.container_postbtn *)").each(function() {
-          $(this).attr("d-dl-tooltip", '');
-          $(this).addClass("icon-tooltip");
-          $(this).addClass("blank-icon");
-        });
+                $(".text-longshort").each(function() {
+                    var length = 36;
+                    $(this).each(function() {
+                        var orig = $(this).text();
+                        if (orig.length >= length) {
+                            $(this).text(orig.substr(0, length) + '...');
+                        }
+                    });
+                });
 
-        $(".text-short").each(function() {
-          var length = 24;
-          $(this).each(function() {
-            var orig = $(this).text();
-            if (orig.length >= length) {
-              $(this).text(orig.substr(0, length) + '...');
+                $(".text-verylongshort").each(function() {
+                    var length = 120;
+                    $(this).each(function() {
+                        var orig = $(this).text();
+                        if (orig.length >= length) {
+                            $(this).text(orig.substr(0, length) + '...');
+                        }
+                    });
+                });
+
+                var linkHref2 = encodeURI(linkHref);
+                var hostHref = $(location).attr('protocol') + '//' + $(location).attr('host') + '/';
+
+                $(".category-list a").each(function() {
+                    // $(this).removeClass('selected');
+                    var origHref = encodeURI($(this).attr("href"));
+
+                    if (linkHref.indexOf(origHref) == -1 && linkHref2.indexOf(origHref) == -1)
+                        return;
+
+                    var link = linkHref.substr(linkHref.length - origHref.length);
+                    var link2 = linkHref2.substr(linkHref2.length - origHref.length);
+                    if (link.indexOf(origHref) == -1 && link2.indexOf(origHref) == -1) {
+                        if (origHref == "/") {
+                            if (linkHref != hostHref)
+                                return;
+                        } else if (origHref == "/category") {
+                            if (linkHref.indexOf(origHref + "/?") == -1 &&
+                                linkHref2.indexOf(origHref + "/?") == -1)
+                                return;
+                        } else if (origHref.indexOf("/category/") == 0) {
+                            if (linkHref.indexOf(origHref + "?") == -1 &&
+                                linkHref2.indexOf(origHref + "?") == -1)
+                                return;
+                        }
+                    }
+                    if (linkHref.indexOf("/archive/") != -1 &&
+                        origHref.indexOf("/archive/") == -1) {
+                        return; // 아카이브 날짜 때문에 들어가는 코드
+                    }
+                    $(this).addClass("selected");
+                    $(this).parent(".sub_category_list").addClass("selected");
+                    $(this).next(".sub_category_list").addClass("selected");
+                });
+
+                var burger = $('.menu-trigger');
+                burger.each(function(index) {
+                    var $this = $(this);
+                    $this.on('click', function(e) {
+                        e.preventDefault();
+                        $(this).toggleClass('active-7');
+                        if ($(this).hasClass('active-7')) {
+                            $('.main-sidebar').addClass('active');
+                        } else {
+                            $('.main-sidebar').removeClass('active');
+                        }
+                    })
+                });
+
+                $('.change-icon').each(function() {
+                    var target = $(this);
+                    var textt = "보호되어 있는 글입니다.";
+                    if (target.attr("summary").indexOf("보호되어 있는 글입니다.") !== -1) {
+                        target.find(".lock").addClass("active");
+                    } else {
+                        target.find(".default").addClass("active");
+                    }
+                });
+
+                $(".article-footer-counter .comment-counter-btn").click(function() {
+                    var commentbox = $(this).closest(".article-footer-content").next("div[id]").find(".comment-pack");
+                    commentbox.toggleClass("maxheight-hidden");
+                });
+
+            });
+
+            function copy(val) {
+                var dummy = document.createElement("textarea");
+                document.body.appendChild(dummy);
+                dummy.value = val;
+                dummy.select();
+                document.execCommand("copy");
+                document.body.removeChild(dummy);
+                alert("URL이 복사되었습니다.");
             }
-          });
-        });
 
-        $(".text-longshort").each(function() {
-          var length = 36;
-          $(this).each(function() {
-            var orig = $(this).text();
-            if (orig.length >= length) {
-              $(this).text(orig.substr(0, length) + '...');
+            function slideNext(e, time) {
+                var select = $(e).closest(".slider-box");
+                var slider = select.find(".slider-ul");
+                var sel = slider.find("li.slide");
+                var imgs = sel.length - 1;
+                var now = Number(select.attr("now"));
+
+                now = now + time;
+                now = now > imgs ? 0 : now;
+                now = now < 0 ? imgs : now;
+                slider.css({
+                    "top": -400 * now + "px"
+                });
+                select.attr("now", now);
             }
-          });
-        });
 
-        $(".text-verylongshort").each(function() {
-          var length = 120;
-          $(this).each(function() {
-            var orig = $(this).text();
-            if (orig.length >= length) {
-              $(this).text(orig.substr(0, length) + '...');
+            function load() {
+                $("#content-cover").addClass("active");
             }
-          });
-        });
 
-        $(".category-list a").each(function() {
-          var href = $(this).attr("href");
-          if (linkHref.indexOf(href) !== -1) {
-            if (href == "/category") {
-              var link = linkHref.substr(linkHref.length - href.length);
-              if (link == href ||
-                linkHref.indexOf(href + "/?") !== -1)
-                $(this).addClass("selected");
-            } else if (href == "/") {
-              return false;
-            } else {
-              $(this).addClass("selected");
-            }
-            $(this).parent(".sub_category_list").addClass("selected");
-            $(this).next(".sub_category_list").addClass("selected");
-          }
-        });
-
-        var burger = $('.menu-trigger');
-        burger.each(function(index) {
-          var $this = $(this);
-          $this.on('click', function(e) {
-            e.preventDefault();
-            $(this).toggleClass('active-7');
-            if ($(this).hasClass('active-7')) {
-              $('.main-sidebar').addClass('active');
-            } else {
-              $('.main-sidebar').removeClass('active');
-            }
-          })
-        });
-
-        $('.change-icon').each(function() {
-          var target = $(this);
-          var textt = "보호되어 있는 글입니다.";
-          if (target.attr("summary").indexOf("보호되어 있는 글입니다.") !== -1) {
-            target.find(".lock").addClass("active");
-          } else {
-            target.find(".default").addClass("active");
-          }
-        });
-
-        $(".article-footer-counter .comment-counter-btn").click(function() {
-          var commentbox = $(this).closest(".article-footer-content").next("div[id]").find(".comment-pack");
-          commentbox.toggleClass("maxheight-hidden");
-        });
-
-      });
-
-      function copy(val) {
-        var dummy = document.createElement("textarea");
-        document.body.appendChild(dummy);
-        dummy.value = val;
-        dummy.select();
-        document.execCommand("copy");
-        document.body.removeChild(dummy);
-        alert("URL이 복사되었습니다.");
-      }
-
-      function slideNext(e, time) {
-        var select = $(e).closest(".slider-box");
-        var slider = select.find(".slider-ul");
-        var sel = slider.find("li.slide");
-        var imgs = sel.length - 1;
-        var now = Number(select.attr("now"));
-
-        now = now + time;
-        now = now > imgs ? 0 : now;
-        now = now < 0 ? imgs : now;
-        slider.css({"top" : -400 * now +"px"});
-        select.attr("now", now);
-      }
-
-      function load() {
-        $("#content-cover").addClass("active");
-      }
-    </script>
-  </s_t3>
+        </script>
+    </s_t3>
 </body>
 
 </html>
