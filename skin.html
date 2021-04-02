@@ -183,8 +183,7 @@
                         <ul>
 
                             <s_list_empty>
-                                <div class="article-list-empty" style="display: none;">
-                                    <!-- style="display: none;" -->
+                                <div class="article-list-empty">
                                     <div class="shadow-box">
                                         <div class="background-dots hatch"></div>
                                         <div class="box-con">
@@ -765,9 +764,7 @@
                 var hostHref = $(location).attr('protocol') + '//' + $(location).attr('host') + '/';
 
                 $(".category-list a").each(function() {
-                    // $(this).removeClass('selected');
                     var origHref = encodeURI($(this).attr("href"));
-
                     if (linkHref.indexOf(origHref) == -1 && linkHref2.indexOf(origHref) == -1)
                         return;
 
@@ -792,8 +789,7 @@
                         return; // 아카이브 날짜 때문에 들어가는 코드
                     }
                     $(this).addClass("selected");
-                    $(this).parent(".sub_category_list").addClass("selected");
-                    $(this).next(".sub_category_list").addClass("selected");
+                    $(this).closest(".sub_category_list").addClass("selected");
                 });
 
                 var burger = $('.menu-trigger');
