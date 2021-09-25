@@ -656,7 +656,7 @@ body.sidebar-left .main-profile-quickmenu {
 
 .comment-icon {
     position: relative;
-    width: 60px;
+    width: 56px;
     border: 3px solid;
     font-size: 1.5em;
     background-color: var(--base);
@@ -1166,15 +1166,15 @@ h6 img {
 
 .article-title {
     display: block;
-    margin-left: 15px;
+    margin-left: 10px;
     line-height: 1.5em;
-    text-indent: -5px;
     max-width: 80%;
 }
 
 .article-title * {
     background-color: var(--base);
-    padding: 4px 5px;
+    padding: 4px 5px 3px;
+    -webkit-box-decoration-break: clone;
 }
 
 .article-title a:hover {
@@ -1252,6 +1252,17 @@ i {
     font-style: italic;
 }
 
+.article-content button:not([class]) {
+    background: transparent;
+    padding: 0 .3em;
+    border: 2px solid;
+    color: var(--point);
+}
+
+.article-content input {
+	background: transparent;
+}
+
 .article-content mark {
     padding: 1px 2px;
     font-weight: bold;
@@ -1279,6 +1290,7 @@ i {
     font-weight: bold;
     text-decoration-thickness: 2px;
     word-break: break-all;
+	text-decoration-color: var(--point);
 }
 
 .article-content a:hover {
@@ -1509,6 +1521,7 @@ i {
     text-decoration: none;
     background: var(--base);
     padding: 1px 3px;
+	-webkit-box-decoration-break: clone;
 }
 
 .thumb-list-article .background-cover {
