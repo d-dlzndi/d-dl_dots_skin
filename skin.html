@@ -35,7 +35,7 @@
 
 </head>
 
-<body onload="load();" class="<s_if_var_sidebar-left-use> sidebar-left </s_if_var_sidebar-left-use>">
+<body class="<s_if_var_sidebar-left-use> sidebar-left </s_if_var_sidebar-left-use>">
     <s_t3>
         <nav class="main-sidebar no-drag">
             <div class="main-top">
@@ -843,9 +843,9 @@
                 select.attr("now", now);
             }
 
-            function load() {
+            window.addEventListener('load', function(){
                 $("#content-cover").addClass("active");
-            }
+            });
 
         </script>
     </s_t3>
