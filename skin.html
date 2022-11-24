@@ -512,11 +512,11 @@
                                                                     <input type="password" name="[##_rp_input_password_##]" placeholder="PASSWORD..." maxlength="12" required />
                                                                     <input type="url" name="[##_rp_input_homepage_##]" placeholder="HOMAPAGE..." maxlength="50" />
                                                                 </s_rp_guest>
+                                                            </s_rp_member>
                                                                 <span class="check-label">
                                                                     <input type="checkbox" name="[##_rp_input_is_secret_##]" id="[##_rp_input_is_secret_##]" />
                                                                     <label for="[##_rp_input_is_secret_##]">비밀글...</label>
                                                                 </span>
-                                                            </s_rp_member>
                                                         </div>
                                                         <div class="flex">
                                                             <textarea name="[##_rp_input_comment_##]" placeholder="COMMENT..." required></textarea>
@@ -602,15 +602,19 @@
                             <div class="comment-write-form">
                                 <div class="flex">
                                     <div>
+                                        <div class="flex">
                                         <s_guest_member>
                                             <s_guest_form>
-                                                <div class="flex">
                                                     <input type="text" name="[##_guest_input_name_##]" value="[##_guest_name_##]" placeholder="NAME..." maxlength="12" required />
                                                     <input type="password" name="[##_guest_input_password_##]" value="[##_guest_password_##]" placeholder="PASSWORD..." maxlength="12" required />
                                                     <input type="url" name="[##_guest_input_homepage_##]" value="[##_guest_homepage_##]" placeholder="HOMAPAGE..." maxlength="50" />
-                                                </div>
                                             </s_guest_form>
                                         </s_guest_member>
+                                                                <span class="check-label">
+                                                                    <input type="checkbox" name="[##_guest_input_is_secret_##]" id="[##_guest_input_is_secret_##]" />
+                                                                    <label for="[##_rp_input_is_secret_##]">비밀글...</label>
+                                                                </span>
+										</div>
                                         <div class="flex">
                                             <textarea name="[##_guest_textarea_body_##]" placeholder="COMMENT..." required></textarea>
                                         </div>
