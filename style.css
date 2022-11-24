@@ -366,7 +366,7 @@ body.sidebar-left .main-sidebar {
     width: var(--content-width);
     max-width: 100%;
     margin: 0 auto;
-    padding: 100px 50px 0px;
+    padding: 100px 50px 50px;
 }
 
 body:not(.sidebar-left) .content {
